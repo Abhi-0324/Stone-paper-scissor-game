@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Barlow condensed",sans-serif;
+}
+.house{
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(
+      134.34% 134.34% at 50% 0%,
+      #1f3757 0%,
+      #131537 100%
+    );
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.scoreboard{
+    width: 700px;
+    border: 1px solid white;
+    border-radius: 15px;
+    margin-top: 50px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.score{
+    width: 150px;
+    height: 114px;
+    background-color: white;
+    border-radius: 8px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    margin-left: 30px;
+
+}
+.score h1{
+    color: #565458;
+    font-size: 56px;
+}
+
+.score p{
+    color:  blue;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 2.5px;
+
+
+}
+.user{
+    background-image: url(assets/triangle.png);
+    background-repeat: no-repeat;
+    width: 476px;
+    height: 430px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+    background-position: center;
+}
+
+.Scissors{
+    margin-left: 20px;
+
+}
+
+.paper{
+    margin-right: 20px;
+
+}
+
+.user .hand{
+    cursor: pointer;
+    transition: all 0.25s;
+}
+
+.user .hand:hover{
+    transform: translate3d(0px,-8px,0px);   
+}
+
+.contest{
+    width: 900px;
+    display: none;
+    margin-top: 50px;
+}
+ .contest img{
+     width: 275px;
+     height: 275px;
+ }
+ .contest>div{
+     flex: 1;
+ }
+ .contest h1{
+    color:  white;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    align-items: center;
+    text-align: center;
+ }
+ .contest .handimgcontainer{
+  display: flex;
+  justify-content: center;
+ }
+ 
+ .umpire{
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    justify-content: center;
+ }
+ .umpire h1{
+     font-size: 45px;
+ }
+
+ .new{
+     background-color: white;
+     padding: 12px 24px;
+     border-radius: 6px;
+     cursor: pointer;
+     color: hsl(229, 25%, 31%);
+    transition: all 0.15s;
+ }
+ .new:hover{
+     background-color: bisque;
+     transform: translate3d(0px, -2px, 0px);
+ }
+ 
