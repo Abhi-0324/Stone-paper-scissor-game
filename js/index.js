@@ -1,7 +1,7 @@
 const handoptions ={
    "rock": "assets/Rock.png",
    "Scissors": "assets/Scissors.png ",
-   "paper": " assets/paper.png"
+   "paper": " assets/Paper.png"
 }
 let SCORE =0;
 const pickuserhand =(hand) =>{
