@@ -1,32 +1,45 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 body{
     font-family: "Barlow condensed",sans-serif;
-}
-.house{
-    width: 100vw;
-    height: 100vh;
-    background: radial-gradient(
+    /* background: radial-gradient(
       134.34% 134.34% at 50% 0%,
       #1f3757 0%,
       #131537 100%
-    );
+    ); */
+    background-color: #131537;
+    height: 100vh;
+    
+}
+.house{
+    /* width: 100vw; */
+    /* height: auto; */
+    /* background: radial-gradient(
+      134.34% 134.34% at 50% 0%,
+      #1f3757 0%,
+      #131537 100%
+    ); */
     display: flex;
     flex-direction: column;
     align-items: center; 
+    justify-content: center;
 }
 .scoreboard{
     width: 700px;
     border: 1px solid white;
     border-radius: 15px;
+    margin: 0px 80px;
     margin-top: 50px;
-    height: 150px;
+    /* height: 150px; */
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    padding: 20px;
+
 }
 .score{
     width: 150px;
@@ -38,6 +51,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: 50px;
 }
 .title{
     margin-left: 30px;
@@ -60,6 +74,7 @@ body{
 .user{
     background-image: url(assets/triangle.png);
     background-repeat: no-repeat;
+    /* background-size: cover; */
     width: 476px;
     height: 430px;
     display:flex;
@@ -78,6 +93,9 @@ body{
     margin-right: 20px;
 
 }
+.user{
+    padding: 0px 20px;
+}
 
 .user .hand{
     cursor: pointer;
@@ -92,6 +110,7 @@ body{
     width: 900px;
     display: none;
     margin-top: 50px;
+    padding-bottom: 50px;
 }
  .contest img{
      width: 275px;
@@ -136,3 +155,63 @@ body{
      transform: translate3d(0px, -2px, 0px);
  }
  
+ @media screen and (max-width: 850px) {
+     .scoreboard{
+         width: auto;
+     }
+     .house{
+         justify-content: center;
+     }
+     
+ }
+ @media screen and (max-width: 500px) {
+      img{
+        width: auto;
+        height: auto;
+     }
+     
+     .user{
+         width: auto;
+         height: auto;
+     }
+ }
+ @media screen and (max-width: 490px) {
+     .user{
+         background-image: none;
+     }
+     .paper{
+         margin-right: 0;
+     }
+     
+     
+     img{
+         width: 150px;
+         height: 150px;
+     }
+ }
+
+
+ @media screen and (max-width: 630px) {
+     
+     .scoreboard{
+         justify-content: center;
+         width: 70vw;
+         margin-left: 40px;
+         margin-right: 40px;
+         margin: auto;
+         margin-top: 100px;
+     }
+ }
+ @media screen and (max-width:900px) {
+     .contest{
+         flex-flow: column;
+     }
+     #userPickImage{
+         width: 150px;
+         height: 150px;
+     }
+     #compPickImage{
+         width: 150px;
+         height: 150px;
+     }
+ }
